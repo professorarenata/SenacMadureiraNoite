@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <script>
+        function soma(form1)
+        {
+           a=new Number(form1.t1.value);
+           b=new Number(form1.t2.value);
+           c=new Number(a+b);
+           alert("A soma dos números é:  "+c);
+        }
+
+        function sub(form1)
+        {
+           a=new Number(form1.t1.value);
+           b=new Number(form1.t2.value);
+           c=new Number(a-b);
+           alert("A soma dos números é:  "+c);
+        }
+
+        function multi(form1)
+        {
+           a=new Number(form1.t1.value);
+           b=new Number(form1.t2.value);
+           c=new Number(a*b);
+           alert("A soma dos números é:  "+c);
+        }
+
+        function div(form1)
+        {
+           a=new Number(form1.t1.value);
+           b=new Number(form1.t2.value);
+           c=new Number(a/b);
+           alert("A soma dos números é:  "+c);
+        }
+
+        function mudarBody(cor) {
+                document.getElementById("fundo").style.backgroundColor = cor;
+        }
+        </script>
+
+        <style>
+
+            form{
+              border: 1px solid;
+              width: 20%;
+              margin: auto;
+              background: linear-gradient(rgb(231, 173, 183),rgb(179, 161, 161));
+            }
+
+            h1{
+              color: red;
+            }
+            h2{
+              color: blue;
+            }
+        </style>
+</head>
+<body id="fundo">
+      
+     Escolha a cor da HomePage:<br>
+          <button name="fundoverde" id="fundoverde" value="verde" onclick="mudarBody('green')">Verde</button>
+          <button name="fundoazul" id="fundoazul" value="azul" onclick="mudarBody('blue')">Azul</button>
+          <button name="fundovermelho" id="fundovermelho" value="vermelho" onclick="mudarBody('red')">Vermelho</button>
+          <button name="fundobranco" id="fundobranco" value="branco" onclick="mudarBody('white')">Branco</button>
+      
+    <form name="form1">
+        <br>
+        
+        <center><h1>Calculadora <br><br> </h1>
+          <h2>
+              Digite um número:
+        <br>
+          <input type="text" name="t1"><br>
+          Digite outro número:<br>
+          <input type="text" name="t2"><br><br>
+          <input type="button" name="b1" value="+" onClick="soma(form1)">
+          <input type="button" name="b2" value="-" onclick="sub(form1)"><br>
+          <input type="button" name="b3" value="*" onclick="multi(form1)">
+          <input type="button" name="b4" value="/" onclick="div(form1)">
+          <br><br>
+      
+    </form>
+    </h2>
+    
+    
+</body>
+</html>
