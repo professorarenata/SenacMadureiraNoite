@@ -1,12 +1,51 @@
 <html>
 <head>
+    <style> 
+ html {
+    min-height: 100%; 
+}
+body {
+    background: -webkit-linear-gradient(rgb(49, 188, 212), rgb(157, 255, 252)); 
+    background: -o-linear-gradient(rgb(49, 188, 212), rgb(157, 255, 252)); 
+    background: -moz-linear-gradient(rgb(49, 188, 212),  rgb(157, 255, 252)); 
+    background: linear-gradient(rgb(49, 188, 212),  rgb(157, 255, 252)); 
+    background-color: ( rgb(49, 188, 212)); 
+}   
+
+
+    </style>
 <script>
-function soma(form1)
+   
+function soma(form1) //cada function realiza uma operação
 {
    a=new Number(form1.t1.value);
    b=new Number(form1.t2.value);
    c=new Number(a+b);
-   alert("A soma dos n�meros �:  "+c);
+   alert("A soma dos números é:  "+c);
+}
+
+function subtracao(form1)
+{
+   a=new Number(form1.t1.value);
+   b=new Number(form1.t2.value);
+   c=new Number(a-b);
+   alert("A subtração dos números é:  "+c);
+}
+
+function multiplicacao(form1)
+{
+   a=new Number(form1.t1.value);
+   b=new Number(form1.t2.value);
+   c=new Number(a*b);
+   alert("A multiplicação dos números é:  "+c);
+}
+
+function divisao(form1)
+{
+   a=new Number(form1.t1.value);
+   b=new Number(form1.t2.value);
+   c=new Number(a/b);
+   alert("A divisão dos números é:  "+c);
 }
 </script>
 </head>
@@ -14,20 +53,20 @@ function soma(form1)
 <body>
 <center><h1>Calculadora <br><br> </h1>
   <h3>
-Digite um n�mero:
+Digite um número:
 <form name="form1">
   <input type="text" name="t1"><br>
-  Digite outro n�mero:<br>
+  Digite outro número:<br>
   <input type="text" name="t2"><br><br>
   <input type="button" name="b1" value="+" onClick="soma(form1)">
-  <input type="button" name="b2" value="-">
-  <input type="button" name="b3" value="*">
-  <input type="button" name="b4" value="/">
+  <input type="button" name="b2" value="-" onClick="subtracao(form1)"><br>
+  <input type="button" name="b3" value="*" onClick="multiplicacao(form1)">
+  <input type="button" name="b4" value="/" onClick="divisao(form1)">
+
   <br><br>
-  Escolha a cor da HomePage:<br>
+ 
   
 </form>
- </h3>
 
 </body>
 </html>
