@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora Web v2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/animate.css" type="text/css"> -->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">-->
+
+    <script>
+        function soma(form1)
+        {
+           a=new Number(form1.t1.value);
+           b=new Number(form1.t2.value);
+           c=new Number(a+b);
+           //document.write("A soma dos números é:  "+c);
+           alert("Resultado:  "+c);
+        }
+        function subtracao(form1)
+        {
+           a=new Number(form1.t1.value);
+           b=new Number(form1.t2.value);
+           c=new Number(a-b);
+           //document.write("A soma dos números é:  "+c);
+           alert("Resultado:  "+c);
+        }
+        function multiplicacao(form1)
+        {
+           a=new Number(form1.t1.value);
+           b=new Number(form1.t2.value);
+           c=new Number(a*b);
+           //document.write("A soma dos números é:  "+c);
+           alert("Resultado:  "+c);
+        }
+        function divisao(form1)
+        {
+           a=new Number(form1.t1.value);
+           b=new Number(form1.t2.value);
+           c=new Number(a/b);
+           //document.write("A soma dos números é:  "+c);
+           alert("Resultado:  "+c);
+        }
+        </script>
+</head>
+<body class="container-fluid vh-100 animated fadeInUp" style="background-image: linear-gradient(to bottom right, blue, cyan, white)">
+    <div class="row p-5">
+        <header class="container-fluid blockquote text-center ">
+            <h1 class="text-light"><strong class="display-4">Calculadora</strong></h1>
+        </header>
+    </div>
+
+    <div class="row p-3">
+        <article class="container-fluid blockquote text-center ">
+                <h3 class="p-3">Primeiro valor:</h3>
+                <form name="form1">
+                    <input type="text" name="t1"><br>
+                    <h3 class="p-3">Segundo valor:<br></h3>
+                    <input type="text" name="t2"><br><br>
+                    <input type="button" name="b1" value="+" class="btn btn-outline-dark" onClick="soma(form1)" title="Soma">
+                    <input type="button" name="b2" value="-" class="btn btn-outline-dark" onClick="subtracao(form1)" title="Subtração">
+                    <input type="button" name="b3" value="*" class="btn btn-outline-dark" onClick="multiplicacao(form1)" title="Multiplicação">
+                    <input type="button" name="b4" value="/" class="btn btn-outline-dark" onClick="divisao(form1)" title="Divisão">
+                </form>
+        </article>
+    </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
