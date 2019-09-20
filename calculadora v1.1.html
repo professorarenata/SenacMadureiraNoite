@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+     function soma(form1)
+    {
+   a = new  Number (form1 . t1 . value);
+   b = new  Number (form1 . t2 . value);
+   c = new  Number (a+b);
+   alert ("A soma dos números é: "+c);
+    }
+
+    function subtracao(form1)
+    {
+   aa = new  Number (form1 . t1 . value);
+   ba = new  Number (form1 . t2 . value);
+   ca = new  Number (a-b);
+   alert ("A subtração dos números é: "+ca);
+    }
+
+    function multiplicacao(form1)
+    {
+   ab = new  Number (form1 . t1 . value);
+   bb = new  Number (form1 . t2 . value);
+   cb = new  Number (a*b);
+   alert ("A multiplicação dos números é: "+cb);
+    }
+
+    function divisao(form1)
+    {
+   ad = new  Number (form1 . t1 . value);
+   bd = new  Number (form1 . t2 . value);
+   cd = new  Number (a/b);
+   alert ("A divisão dos números é: "+cd);
+    }
+
+    function corbody(cor) {
+        document.getElementById("corfundo").style.backgroundColor = cor;
+    }
+
+  
+    </script>
+</head>
+<body id="corfundo">
+        ESCOLHA A Cor da Página Web: <br/>
+        <button name="verde" id="verde" value="verde" onclick="corbody('green')">Verde</button>
+        <button name="azul" id="azul" value="azul" onclick="corbody('blue')">Azul</button>
+        <button name="vermelho" id="vermelho" value="vermelho" onclick="corbody('red')">Vermelho</button>
+        <button name="branco" id="branco" value="branco" onclick="corbody('white')">Branco</button>
+    
+    <Center><h1>Calculadora</h1</Center><br/><br/>
+    <h3>
+  Digite um número: <br>
+  <form  name = "form1">
+    <input  type = "texto"  name = "t1"> <br/>
+    Digite Outro Número: <br/>
+    <input  type = "text"  name = "t2"> <br/> <br/>
+    <input  type = "button"  name = "b1"  value = "+"  onclick = "soma(form1)"/>
+    <input  type = "button"  name = "b2"  value = "-"  onclick = "subtracao(form1)"/>
+    <input  type = "button"  name = "b3"  value = "*"  onclick = "multiplicacao(form1)"/>
+    <input  type = "button"  name = "b4"  value = "/"  onclick = "divisao(form1)"/> <br/>
+    
+    
+    
+  </form>
+  </h3>
+
+</body>
+</html>
